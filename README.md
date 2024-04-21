@@ -5,8 +5,6 @@
 </head>
 <body>
 
-<h1>Reverse Shell Malware</h1>
-
 <h2>Description</h2>
 
 <p>The Reverse Shell Malware script is a template for creating malicious software designed to establish a reverse shell connection with a remote host. This type of malware allows an attacker to gain unauthorized access to a victim's computer, execute arbitrary commands, and exfiltrate sensitive information.</p>
