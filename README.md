@@ -72,7 +72,7 @@
   <li><code>screenshot()</code>: Triggers the capture of a screenshot of the victim's desktop, which is subsequently sent as an email attachment for review.</li>
   <li><code>cd &lt;directory&gt;</code>: Changes the current working directory on the victim's system, allowing the attacker to navigate the file system.</li>
   <li><code>--help</code>: Displays a list of available commands and usage instructions.</li>
-  <li>#Other than special commands like above the shell will also execute any windows system commands succesfully)#</li>
+  <li>(Other than special commands like above the shell will also execute any windows system commands succesfully)</li>
 </ul>
 
 <h2>Disclaimer</h2>
