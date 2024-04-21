@@ -46,7 +46,7 @@
 
 <ul>
   <li>Replace <code>"YOUR_HOST_IP"</code> with the IP address of your remote host where the listener script is running.</li>
-  <li>Replace <code>3131</code> with the port number used by your listener script to accept incoming connections.</li>
+  <li>Replace <code>5000</code> with the port number used by your listener script to accept incoming connections.</li>
   <li>Replace <code>"YOUR_PASSWORD"</code> with a strong password for authentication between the malware and the listener script.</li>
   <li>Replace <code>"your_email@gmail.com"</code> with your email address for sending notifications, screenshots, and downloaded files.</li>
   <li>Replace <code>"YOUR_EMAIL_PASSWORD"</code> with the password for your email account.</li>
